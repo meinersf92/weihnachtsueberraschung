@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helena & Klaus – Weihnachtsüberraschung</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(180deg, #0f2a24, #1f4d3f);
+      color: #2b2b2b;
+      overflow-x: hidden;
+    }
+
+    /* Snow animation */
+    .snow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 40px 70px, white, transparent),
+        radial-gradient(2px 2px at 50px 160px, white, transparent),
+        radial-gradient(3px 3px at 90px 40px, white, transparent),
+        radial-gradient(2px 2px at 130px 80px, white, transparent),
+        radial-gradient(3px 3px at 160px 120px, white, transparent);
+      background-size: 200px 200px;
+      animation: snow 12s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes snow {
+      from { background-position: 0 0; }
+      to { background-position: 0 200px; }
+    }
+
+    .overlay {
+      background: rgba(247, 244, 239, 0.95);
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      background: radial-gradient(circle at top, #fff7e6, #efe5d4);
+      border-bottom: 6px solid #d4af37;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #b08a2e;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      color: #3a3a3a;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      line-height: 1.7;
+    }
+
+    .box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2.2rem;
+      margin-top: 2.5rem;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      border: 2px solid #f1e6c8;
+    }
+
+    h2 {
+      color: #2f5d50;
+      margin-top: 0;
+      font-size: 1.9rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .trees {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3.5rem;
+      font-size: 1.2rem;
+      color: #2f5d50;
+    }
+
+    .signature {
+      margin-top: 1.2rem;
+      font-style: italic;
+      color: #6b4e16;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="snow"></div>
+
+  <div class="overlay">
+    <header>
+      <h1>Helena & Klaus</h1>
+      <p>Eine Weihnachtsüberraschung von Herzen 🎄✨</p>
+    </header>
+
+    <main>
+      <div class="box">
+        <p>
+          Liebe Mama, lieber Papa,<br><br>
+          Weihnachten ist die Zeit der Lichter, der Ruhe und der gemeinsamen Momente.
+          Genau das möchten wir euch schenken: Zeit für euch, Meeresluft,
+          lange Spaziergänge und ein paar Tage fern vom Alltag.
+        </p>
+      </div>
+
+      <div class="trees">🎄 ✨ 🎄 ✨ 🎄</div>
+
+      <div class="box">
+        <h2>Eure Reise</h2>
+        <ul>
+          <li><strong>Reiseziel:</strong> Niederländische Nordsee</li>
+          <li><strong>Hotel:</strong> Carlton Beach</li>
+          <li><strong>Zimmer:</strong> Beach Comfort Large Bed inkl. Frühstück</li>
+          <li><strong>Zeitraum:</strong> Mittwoch, 4. März 2026 bis Samstag, 7. März 2026</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Gut zu wissen</h2>
+        <ul>
+          <li>Check-in ab 15 Uhr, Check-out bis 12 Uhr</li>
+          <li>Kein Voucher nötig, ein Ausweis reicht beim Check-in</li>
+          <li>An- und Abreise sind nicht enthalten</li>
+          <li>Parken gegen Gebühr möglich (Reservierung erforderlich)</li>
+          <li>Haustiere sind im Hotel nicht erlaubt</li>
+        </ul>
+      </div>
+
+      <footer>
+        <p>
+          Wir hoffen sehr, dass ihr euch darüber freut<br>
+          und diese Tage genauso genießt wie wir euch.
+        </p>
+        <p class="signature">
+          Mit den wärmsten Weihnachtsgrüßen<br>
+          Lena, Henrik & Frederik ❤️
+        </p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
